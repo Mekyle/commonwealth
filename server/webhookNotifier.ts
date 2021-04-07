@@ -214,7 +214,7 @@ const send = async (models, content: WebhookContent) => {
           ],
         });
       } else if (url.indexOf('discord.com') !== -1) {
-        // discord webhook format (raw json, for application/json)
+        // discord webhook format 
         webhookData = isChainEvent ? {
           username: 'Commonwealth',
           avatar_url: DEFAULT_COMMONWEALTH_LOGO,
